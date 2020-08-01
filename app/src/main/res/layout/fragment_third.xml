@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+
+    <TextView
+        android:id="@+id/third1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="105dp"
+        android:singleLine="false"
+        android:text="골반비대칭 관련 영상"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/third_text1"
+        android:layout_width="377dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="14dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/third_text2"
+        android:layout_width="377dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btn_third_1"
+        android:layout_width="143dp"
+        android:layout_height="114dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="420dp"
+        android:background="#FFFFFF"
+        android:onClick="onButton1Clicked"
+        android:text="추천영상 1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_third_2"
+        android:layout_width="143dp"
+        android:layout_height="114dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="38dp"
+        android:background="#FFFFFF"
+        android:onClick="onButton1Clicked"
+        android:text="추천영상 2"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

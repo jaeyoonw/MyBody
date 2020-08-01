@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tempapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My Body"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".YoutubeVideo6"></activity>
+        <activity android:name=".YoutubeVideo5" />
+        <activity android:name=".YoutubeVideo4" />
+        <activity android:name=".YoutubeVideo3" />
+        <activity android:name=".YoutubeVideo2" />
+        <activity android:name=".YoutubeVideo1" />
+        <activity android:name=".MyPage" />
+        <activity android:name=".Graph_2.GraphActivity" />
+        <activity android:name=".Result.ThirdFragment" />
+        <activity android:name=".Result.SecondFragment" />
+        <activity android:name=".Result.FirstFragment" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity android:name=".Result.ResultPage" />
+        <activity android:name=".Pic.ImagePage" />
+        <activity android:name=".MainPage" />
+        <activity android:name=".MenuPage" />
+        <activity android:name=".Register.SignupPage" />
+        <activity android:name=".Register.ChkId" />
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.tempapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

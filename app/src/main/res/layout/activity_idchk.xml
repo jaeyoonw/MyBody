@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="아이디 중복 체크"
+        android:textColor="#ff000000"
+        android:textSize="@dimen/double_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="아이디를 입력하세요."
+        android:textColor="#ff000000"
+        android:textSize="@dimen/standard_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="이름"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <EditText
+            android:id="@+id/new_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textUri"
+            android:textColor="#ff000000" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/chkId"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="중복체크"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/blue3"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/standard_text" />
+
+        <Button
+            android:id="@+id/useId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="아이디 사용"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/blue3"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/standard_text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Typing ID and press Check"
+        android:textColor="#ff000000"
+        android:textSize="@dimen/standard_text" />
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="idcard_pic_width">230px</dimen>
+    <dimen name="idcard_pic_height">310px</dimen>
+
+    <dimen name="record_text">36sp</dimen>
+    <dimen name="main_text">40sp</dimen>
+    <dimen name="clock_size">36dp</dimen>
+    <dimen name="basic_text">13sp</dimen>
+    <dimen name="standard_text">20sp</dimen>
+    <dimen name="double_text">26sp</dimen>
+    <dimen name="Icon_size">39dp</dimen>
+    <dimen name="Icon_center_size">180dp</dimen>
+    <dimen name="Icon_side_size">72dp</dimen>
+    <dimen name="Icon_right_margin">70dp</dimen>
+    <dimen name="Icon_left_margin">35dp</dimen>
+
+</resources>

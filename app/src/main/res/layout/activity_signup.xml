@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="아이디"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="패스워드"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="이름"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="나이"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="전화번호"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="이메일"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="175dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_id"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/blue3"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="중복 확인"
+            android:textAllCaps="false"
+            android:textSize="@dimen/standard_text" />
+
+        <EditText
+            android:id="@+id/new_pw"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/new_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <EditText
+            android:id="@+id/new_age"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColor="#ff000000"
+
+            android:textSize="@dimen/standard_text" />
+
+        <EditText
+            android:id="@+id/new_phone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <EditText
+            android:id="@+id/new_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/standard_text" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/blue3"
+            android:onClick="insert"
+            android:text="회원가입"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/standard_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
